@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html class="light scroll-smooth" lang="ja">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>己斐上4丁目 分譲住宅 | 新築建売分譲</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet"/>
+    <style>
+        :root {
+            --plusJakarta: 'Plus Jakarta Sans', sans-serif;
+            --manrope: 'Manrope', sans-serif;
+        }
+        body { 
+            font-family: var(--manrope); 
+            background-color: #fafaf4;
+            background-image: url("https://lh3.googleusercontent.com/aida/AP1WRLuqJ19CFAHKADRpgWqduXUbzQr6b5HmAd_w86Jz0nXust0xNmVgt-pZI2Ajgk3jww3OKJCl5n8J3tCX8_X7KYiY3MN5zooWxeiJ2h6mbyVA6Kw1H1PUiFud0HqN3P09-_OfDrqhq2h0Ao5zq3o0fK4YyOhOidxQ-GSxoik8CyR6Wobugls293kWTjfomm0s7XHgAJRsfQ59W80k22g9rcWRhyqqHak8X5f3e5Uvh63SxT7We-0SQh-9Rns");
+            background-size: cover;
+            background-attachment: fixed;
+            -webkit-font-smoothing: antialiased;
+        }
+        .font-headline { font-family: var(--plusJakarta); }
+        .font-display { font-family: var(--plusJakarta); }
+        
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        
+        .glass-header {
+            background: rgba(250, 250, 244, 0.85);
+            backdrop-filter: blur(16px);
+        }
+        
+        .bento-card {
+            transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.6s ease, background-color 0.4s ease;
+            background-color: #ffffff;
+        }
+        @media (min-width: 768px) {
+            .bento-card:hover {
+                transform: translateY(-12px);
+                box-shadow: 0 30px 60px -12px rgba(93, 109, 88, 0.12);
+            }
+        }
+
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+
+        .organic-frame {
+            border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+        }
+    </style>
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                "on-tertiary": "#ffffff",
+                "inverse-surface": "#2f312e",
+                "on-primary": "#ffffff",
+                "surface-variant": "#e3e3de",
+                "secondary-fixed-dim": "#cbc6bd",
+                "on-primary-fixed": "#111f0f",
+                "primary-container": "#5d6d58",
+                "on-secondary": "#ffffff",
+                "on-error": "#ffffff",
+                "error-container": "#ffdad6",
+                "background": "#fafaf4",
+                "surface-tint": "#53634e",
+                "on-secondary-container": "#67645d",
+                "on-secondary-fixed": "#1d1b16",
+                "on-tertiary-fixed": "#2f1501",
+                "tertiary-container": "#886042",
+                "surface-container-low": "#f4f4ee",
+                "surface-container-lowest": "#ffffff",
+                "surface-container-high": "#e8e8e3",
+                "on-tertiary-fixed-variant": "#613f24",
+                "inverse-on-surface": "#f1f1ec",
+                "on-error-container": "#93000a",
+                "secondary": "#615e57",
+                "primary-fixed-dim": "#baccb3",
+                "on-tertiary-container": "#ffe4d2",
+                "on-background": "#1a1c19",
+                "surface-container-highest": "#e3e3de",
+                "surface-container": "#eeeee9",
+                "primary": "#455541",
+                "inverse-primary": "#baccb3",
+                "surface-dim": "#dadad5",
+                "primary-fixed": "#d6e8ce",
+                "outline-variant": "#c4c8bf",
+                "on-primary-fixed-variant": "#3c4b38",
+                "outline": "#747871",
+                "secondary-container": "#e8e2d9",
+                "on-primary-container": "#dceed4",
+                "tertiary-fixed-dim": "#efbc98",
+                "on-surface-variant": "#444841",
+                "surface-bright": "#fafaf4",
+                "tertiary-fixed": "#ffdcc4",
+                "tertiary": "#6d492c",
+                "surface": "#fafaf4",
+                "error": "#ba1a1a",
+                "on-surface": "#1a1c19",
+                "on-secondary-fixed-variant": "#494640",
+                "secondary-fixed": "#e8e2d9"
+            },
+            "borderRadius": {
+                "DEFAULT": "0.5rem",
+                "lg": "0.5rem",
+                "xl": "0.75rem",
+                "full": "9999px",
+                "2xl": "1rem",
+                "3xl": "1.5rem",
+                "4xl": "2.5rem"
+            },
+            "spacing": {
+                "max-width": "1280px",
+                "container-max": "1280px",
+                "unit": "4px",
+                "margin-mobile": "20px",
+                "gutter": "24px",
+                "margin-desktop": "64px",
+                "section-gap": "140px"
+            },
+            "fontFamily": {
+                "headline": ["Plus Jakarta Sans", "sans-serif"],
+                "body": ["Manrope", "sans-serif"],
+                "display": ["Plus Jakarta Sans", "sans-serif"]
+            },
+            "fontSize": {
+                "headline-lg": ["40px", {"lineHeight": "52px", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                "body-lg": ["18px", {"lineHeight": "32px", "fontWeight": "400"}],
+                "body-md": ["16px", {"lineHeight": "28px", "fontWeight": "400"}],
+                "display-lg-mobile": ["33px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                "display-lg": ["59px", {"lineHeight": "70px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                "headline-md": ["24px", {"lineHeight": "1.4", "fontWeight": "600"}],
+                "label-lg": ["14px", {"lineHeight": "20px", "letterSpacing": "0.1em", "fontWeight": "700"}],
+                "label-md": ["12px", {"lineHeight": "16px", "fontWeight": "600"}]
+            }
+          },
+        },
+      }
+    </script>
+</head>
+<body class="text-on-background selection:bg-primary/20 selection:text-primary relative overflow-x-hidden pb-20 md:pb-0">
+
+<header class="fixed top-0 left-0 w-full z-[100] glass-header border-b border-outline/5 py-4 md:py-5">
+    <nav class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+        <div class="flex items-center">
+            <img src="LIFE PLUS_logo.png" alt="株式会社ライフプラス" class="h-[29px] md:h-[36px] w-auto object-contain">
+        </div>
+        <div class="hidden md:flex items-center gap-10">
+            <a class="font-body text-[13px] font-bold text-on-surface-variant hover:text-primary transition-colors duration-300 uppercase tracking-widest" href="#features">Features</a>
+            <a class="font-body text-[13px] font-bold text-on-surface-variant hover:text-primary transition-colors duration-300 uppercase tracking-widest" href="#floorplans">Floor Plans</a>
+            <a class="font-body text-[13px] font-bold text-on-surface-variant hover:text-primary transition-colors duration-300 uppercase tracking-widest" href="#location">Location</a>
+            <a class="font-body text-[13px] font-bold text-on-surface-variant hover:text-primary transition-colors duration-300 uppercase tracking-widest" href="#overview">Overview</a>
+            <a href="https://forms.gle/8WCTNf1ANk5xB3nR9" class="bg-primary text-on-primary px-8 py-3 rounded-full font-body text-[13px] font-bold hover:shadow-lg hover:shadow-primary/20 transition-all text-center">お問い合わせ</a>
+        </div>
+        <button id="menu-btn" class="md:hidden text-primary w-10 h-10 flex items-center justify-center rounded-full hover:bg-primary/5">
+            <span class="material-symbols-outlined text-2xl">menu</span>
+        </button>
+    </nav>
+</header>
+
+<div id="mobile-menu" class="fixed inset-0 z-[150] bg-black/40 backdrop-blur-md translate-x-full transition-transform duration-300 md:hidden">
+    <div class="absolute top-0 right-0 w-3/4 max-w-sm h-full bg-white p-6 shadow-2xl flex flex-col justify-between">
+        <div>
+            <div class="flex justify-between items-center mb-10">
+                <div class="font-headline text-lg font-bold text-primary tracking-tight">MENU</div>
+                <button id="close-menu-btn" class="text-on-surface w-10 h-10 flex items-center justify-center rounded-full hover:bg-primary/5">
+                    <span class="material-symbols-outlined text-2xl">close</span>
+                </button>
+            </div>
+            <nav class="flex flex-col gap-6 font-body text-base font-bold text-on-surface-variant uppercase tracking-widest">
+                <a class="hover:text-primary transition-colors mobile-nav-link" href="#features">Features</a>
+                <a class="hover:text-primary transition-colors mobile-nav-link" href="#floorplans">Floor Plans</a>
+                <a class="hover:text-primary transition-colors mobile-nav-link" href="#location">Location</a>
+                <a class="hover:text-primary transition-colors mobile-nav-link" href="#overview">Overview</a>
+            </nav>
+        </div>
+        <div class="pb-24">
+            <a href="https://forms.gle/8WCTNf1ANk5xB3nR9" class="block w-full bg-primary text-on-primary py-4 rounded-full font-body text-sm font-bold shadow-lg shadow-primary/20 text-center">お問い合わせ</a>
+        </div>
+    </div>
+</div>
+
+<aside class="hidden lg:flex fixed right-0 top-1/2 -translate-y-1/2 flex-col gap-4 p-4 z-50 bg-white/80 backdrop-blur-xl border border-outline/10 rounded-l-[2rem] shadow-2xl">
+    <div class="flex flex-col items-center gap-4">
+        <div class="flex flex-col items-center gap-1">
+            <button class="w-12 h-12 flex items-center justify-center bg-primary text-on-primary rounded-full hover:scale-110 transition-all shadow-lg" onclick="document.getElementById('call-modal').classList.remove('hidden')">
+                <span class="material-symbols-outlined">call</span>
+            </button>
+            <span class="text-[10px] font-bold text-primary">電話相談</span>
+        </div>
+        <div class="flex flex-col items-center gap-1">
+            <a href="https://forms.gle/8WCTNf1ANk5xB3nR9" class="w-12 h-12 flex items-center justify-center text-primary border-2 border-primary/20 rounded-full hover:bg-primary-container/20 transition-all">
+                <span class="material-symbols-outlined">mail</span>
+            </a>
+            <span class="text-[10px] font-bold text-primary">資料請求</span>
+        </div>
+    </div>
+</aside>
+
+<main class="pb-12 md:pb-24">
+    <section class="relative min-h-[660px] md:min-h-[85vh] flex items-end md:items-center pt-28 md:pt-32 pb-12 md:pb-20 overflow-hidden px-margin-mobile">
+        <div class="absolute inset-0 z-0">
+            <img alt="Happy Family" class="w-full h-full object-cover organic-frame" src="https://lh3.googleusercontent.com/aida/AP1WRLs9G-jsjLpNQOtfs7OZXQAkPIXekuEt8SGPKUXftk-guf4-fvbZmVs77nNN0HPIaCgsomO8V4myZA2kAEGNA4zoK_Wf-It1ARfwd5LtAIKFEE0OXFuw0sGq27tcddNFcQDz0oZb-ge29nJBZws-XV8Zqfbjwu_jG993Pn1KkhIESd6VnWsafZ9BEbKDJ_SdvTwBEfHfuTQYf5AuJALqGMoFi6RgVvXakO4kXBW90g1G9HoIKyCtNSniww"/>
+            <div class="absolute inset-0 bg-gradient-to-b md:bg-gradient-to-r from-surface/90 md:from-surface via-surface/80 to-transparent"></div>
+        </div>
+        <div class="max-w-container-max mx-auto md:px-margin-desktop relative z-10 w-full pb-16 md:pb-6">
+            <div class="max-w-3xl">
+                <div class="inline-flex items-center gap-3 px-4 py-1.5 md:px-5 md:py-2 bg-white/60 backdrop-blur-md border border-white/40 rounded-full mb-6 md:mb-8 shadow-sm">
+                    <span class="material-symbols-outlined text-primary text-sm">home</span>
+                    <span class="font-headline text-[10px] md:text-[11px] text-primary tracking-[0.3em] font-bold">己斐上4丁目新築建売分譲</span>
+                </div>
+                <h1 class="font-display text-display-lg-mobile md:text-display-lg text-on-surface mb-6 md:mb-8 leading-[1.2] md:leading-[1.1] font-bold">
+                    家族の笑顔が重なる、<br/><span class="text-primary">ゆとり育むまちと住まい。</span><br/>
+                </h1>
+                <p class="font-body text-body-md md:text-body-lg text-on-surface-variant mb-8 md:mb-12 max-w-xl leading-relaxed md:leading-loose">
+                    広島市西区己斐上。豊かな緑と利便性が調和する街に誕生。穏やかな環境から望む景色とともに、理想の家族時間を。
+                </p>
+                <div class="flex flex-wrap gap-10 items-center">
+                    <a class="bg-primary text-on-primary px-8 py-4 md:px-12 md:py-6 rounded-full font-headline text-sm md:text-[16px] font-bold hover:shadow-2xl hover:shadow-primary/30 hover:-translate-y-1 transition-all inline-flex items-center gap-4" href="#floorplans">
+                        物件情報を詳しく見る
+                        <span class="material-symbols-outlined text-base">arrow_forward</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="relative z-20 py-4 md:py-6 bg-transparent">
+        <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop flex flex-col md:flex-row gap-4 md:gap-8 justify-center">
+            <a class="flex-1 max-w-sm flex items-center justify-between p-6 md:p-8 bg-white border border-outline/10 rounded-2xl md:rounded-[2rem] hover:border-primary/40 hover:shadow-2xl transition-all group shadow-sm" href="#lot-a">
+                <div class="flex flex-col">
+                    <span class="font-headline text-[10px] text-primary mb-1 font-bold tracking-widest uppercase">Plot A</span>
+                    <span class="font-headline text-xl md:text-2xl text-on-surface font-bold">A区画：3,580万円</span>
+                </div>
+                <div class="w-10 h-10 md:w-12 md:h-12 rounded-full border border-primary/20 flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-all">
+                    <span class="material-symbols-outlined text-sm">arrow_outward</span>
+                </div>
+            </a>
+            <a class="flex-1 max-w-sm flex items-center justify-between p-6 md:p-8 bg-white border border-outline/10 rounded-2xl md:rounded-[2rem] hover:border-primary/40 hover:shadow-2xl transition-all group shadow-sm" href="#lot-b">
+                <div class="flex flex-col">
+                    <span class="font-headline text-[10px] text-primary mb-1 font-bold tracking-widest uppercase">Plot B</span>
+                    <span class="font-headline text-xl md:text-2xl text-on-surface font-bold">B区画：3,380万円</span>
+                </div>
+                <div class="w-10 h-10 md:w-12 md:h-12 rounded-full border border-primary/20 flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-all">
+                    <span class="material-symbols-outlined text-sm">arrow_outward</span>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <section class="relative overflow-hidden py-12 md:py-20" id="features">
+        <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop relative z-10">
+            <div class="relative flex flex-col md:flex-row justify-between items-start md:items-end mb-12 md:mb-24 gap-4 md:gap-8">
+                <span class="absolute left-0 bottom-0 md:top-1/2 md:-translate-y-1/2 text-[14vw] md:text-[9vw] font-black tracking-widest uppercase pointer-events-none select-none z-0 font-headline leading-none" style="color: rgba(69, 85, 65, 0.12);">QUALITY</span>
+                <div class="max-w-2xl relative z-10">
+                    <span class="font-headline text-[11px] md:text-[13px] text-primary uppercase tracking-[0.5em] mb-3 md:block font-bold">Point of Quality</span>
+                    <h2 class="font-headline text-headline-md md:text-headline-lg text-on-surface leading-tight">光と風、そして<br/>ゆとりをデザインする。</h2>
+                </div>
+                <p class="font-body text-body-md md:text-body-lg text-on-surface-variant max-w-sm leading-relaxed md:leading-loose relative z-10">住まう人の心地よさを第一に。機能性と意匠性が美しく共存する、己斐上の住まい。</p>
+            </div>
+            
+            <div class="relative overflow-hidden">
+                <div class="absolute left-0 top-1/2 z-20 md:hidden -translate-y-1/2 flex items-center">
+                    <button id="features-prev" class="w-10 h-10 rounded-full bg-white/80 backdrop-blur-sm border border-outline/10 flex items-center justify-center text-primary shadow-md">
+                        <span class="material-symbols-outlined">chevron_left</span>
+                    </button>
+                </div>
+                
+                <div id="features-slider" class="flex md:grid overflow-x-auto md:overflow-x-visible gap-0 md:gap-10 pb-6 md:pb-0 snap-x md:snap-none snap-mandatory grid-cols-1 md:grid-cols-2 lg:grid-cols-4 items-start no-scrollbar">
+                    <div class="bento-card p-8 md:p-12 rounded-3xl md:rounded-[2.5rem] border border-outline/5 w-full md:w-auto snap-center flex-shrink-0 shadow-sm">
+                        <div class="w-12 h-12 md:w-16 md:h-16 bg-primary/5 rounded-2xl flex items-center justify-center mb-6 md:mb-10 text-primary">
+                            <span class="material-symbols-outlined text-2xl md:text-3xl">king_bed</span>
+                        </div>
+                        <h3 class="font-headline text-xl md:text-2xl mb-3 md:mb-5 font-bold">広々LDKを採用</h3>
+                        <p class="font-body text-sm text-on-surface-variant leading-relaxed md:hidden">家族が集まるゆとりある大空間。開放感溢れるリビング。</p>
+                        <p class="font-body text-body-md text-on-surface-variant leading-relaxed hidden md:block">家族が自然と集まる、ゆとりある大空間。開放感に満ちたリビングが、日常の質を高めます。</p>
+                    </div>
+                    <div class="bento-card p-8 md:p-12 rounded-3xl md:rounded-[2.5rem] border border-outline/5 w-full md:w-auto snap-center flex-shrink-0 shadow-sm mt-0 md:mt-0 lg:mt-24">
+                        <div class="w-12 h-12 md:w-16 md:h-16 bg-primary/5 rounded-2xl flex items-center justify-center mb-6 md:mb-10 text-primary">
+                            <span class="material-symbols-outlined text-2xl md:text-3xl">directions_car</span>
+                        </div>
+                        <h3 class="font-headline text-xl md:text-2xl mb-3 md:mb-5 font-bold">駐車スペース2台分</h3>
+                        <p class="font-body text-sm text-on-surface-variant leading-relaxed md:hidden">出し入れがスムーズな並列駐車で快適なカーライフ。</p>
+                        <p class="font-body text-body-md text-on-surface-variant leading-relaxed hidden md:block">出し入れもスムーズな並列駐車。ご夫婦それぞれのカーライフを快適にサポートします。</p>
+                    </div>
+                    <div class="bento-card p-8 md:p-12 rounded-3xl md:rounded-[2.5rem] border border-outline/5 w-full md:w-auto snap-center flex-shrink-0 shadow-sm">
+                        <div class="w-12 h-12 md:w-16 md:h-16 bg-primary/5 rounded-2xl flex items-center justify-center mb-6 md:mb-10 text-primary">
+                            <span class="material-symbols-outlined text-2xl md:text-3xl">countertops</span>
+                        </div>
+                        <h3 class="font-headline text-xl md:text-2xl mb-3 md:mb-5 font-bold">機能性と使いやすさにこだわった設備</h3>
+                        <p class="font-body text-sm text-on-surface-variant leading-relaxed md:hidden">対面式キッチンなど機能性にこだわった設備。収納も豊富なゆとりプラン。</p>
+                        <p class="font-body text-body-md text-on-surface-variant leading-relaxed hidden md:block">キッチンは会話が弾む対面式を採用。ほか設備は機能性にこだわった設備を採用。収納も充実させたゆとりを生むプランです。</p>
+                    </div>
+                    <div class="bento-card p-8 md:p-12 rounded-3xl md:rounded-[2.5rem] border border-outline/5 w-full md:w-auto snap-center flex-shrink-0 shadow-sm mt-0 md:mt-8 lg:mt-12">
+                        <div class="w-12 h-12 md:w-16 md:h-16 bg-primary/5 rounded-2xl flex items-center justify-center mb-6 md:mb-10 text-primary">
+                            <span class="material-symbols-outlined text-2xl md:text-3xl">local_convenience_store</span>
+                        </div>
+                        <h3 class="font-headline text-xl md:text-2xl mb-3 md:mb-5 font-bold">利便性と穏やかさ</h3>
+                        <p class="font-body text-sm text-on-surface-variant leading-relaxed md:hidden">学校、スーパー、病院が徒歩圏内。都心や高速へのアクセスも良好。</p>
+                        <p class="font-body text-body-md text-on-surface-variant leading-relaxed hidden md:block">学校などの教育施設や日々の暮らしに便利なスーパー・病院などの施設も多数。中心部への通勤や、ジアウトレット広島や山陽道へも軽快なアクセス。</p>
+                    </div>
+                </div>
+                
+                <div class="absolute right-0 top-1/2 z-20 md:hidden -translate-y-1/2 flex items-center">
+                    <button id="features-next" class="w-10 h-10 rounded-full bg-white/80 backdrop-blur-sm border border-outline/10 flex items-center justify-center text-primary shadow-md">
+                        <span class="material-symbols-outlined">chevron_right</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="relative bg-surface-container-low py-12 md:py-20" id="floorplans">
+        <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop relative z-10">
+            <div class="text-center mb-10 md:mb-14 relative">
+                <span class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-[14vw] md:text-[9vw] font-black tracking-widest uppercase pointer-events-none select-none z-0 font-headline leading-none" style="color: rgba(69, 85, 65, 0.12);">PLANS</span>
+                <div class="relative z-10">
+                    <span class="font-headline text-[11px] md:text-[13px] text-primary uppercase tracking-[0.5em] mb-4 block font-bold">Plan Details</span>
+                    <h2 class="font-headline text-headline-md md:text-headline-lg text-on-surface">ゆとりをデザインした、2つの住まい。</h2>
+                </div>
+            </div>
+            
+            <div class="space-y-16 md:space-y-24">
+                <div class="scroll-mt-32 bg-surface-container/30 p-6 md:p-12 rounded-3xl md:rounded-[3rem]" id="lot-a">
+                    <div class="flex flex-col lg:flex-row gap-10 lg:gap-20 items-stretch">
+                        <div class="lg:w-1/2 flex flex-col justify-center space-y-6 md:space-y-12">
+                            <div class="space-y-4 md:space-y-6">
+                                <span class="inline-block bg-primary text-on-primary font-headline text-[10px] md:text-[11px] px-4 py-1 md:px-6 md:py-1.5 rounded-full font-bold tracking-[0.2em] uppercase">For Sale</span>
+                                <h3 class="font-headline text-3xl md:text-5xl text-on-surface font-bold leading-tight">A区画：3,580<span class="text-xl md:text-2xl ml-1">万円</span></h3>
+                                <div class="space-y-1 md:space-y-2">
+                                    <p class="text-primary font-headline text-xl md:text-2xl font-bold">家事導線にこだわったゆとりと開放感ある暮らし</p>
+                                    <p class="text-on-surface-variant font-body text-base md:text-lg">家族の成長を見守る、広々とした18帖のLDK。</p>
+                                </div>
+                                <p class="text-on-surface-variant/60 font-body font-medium tracking-wide text-sm md:text-base">4LDK / 土地：129.05㎡ / 建物：101.43㎡</p>
+                            </div>
+                            <div class="relative rounded-2xl md:rounded-[3rem] overflow-hidden group shadow-2xl border-4 border-white">
+                                <img alt="A区画パース" class="w-full h-[240px] md:h-[400px] object-cover transition-transform duration-1000 group-hover:scale-105 cursor-zoom-in" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB5RF7pWGxhxCp29hPh80gtPKDsOmup-nwcGC9XDBwXwHhtzWfK1aDjXoLZ6DhxR4CKrbnAfIX9PbbBu6CypL9IbVkSmCqurmK9K24TB8iXl4uwmB1dgtt4IM83CBBhgP-iicBcKok9Sq2yhEVjP6T1BMLUFVOMVB0dGdAm-VumbhOub3dn_R6UHVkFke27tvtPb4ElnVxc6E6ryPx7KdCZywVblINOb8RSiseyRf72wA_O0OnYIBlViarHeDLJTRHlLICS3DwtAvA"/>
+                            </div>
+                            <p class="text-[10px] md:text-[11px] text-on-surface-variant/60 ml-4 -mt-8 md:mt-10">※イメージパース</p>
+                        </div>
+                        <div class="lg:w-1/2 flex items-center justify-center">
+                            <div class="bg-white p-6 md:p-20 rounded-3xl md:rounded-[4rem] border border-outline/5 shadow-xl w-full flex justify-center items-center">
+                                <img alt="A区画間取り図" class="max-h-[400px] md:max-h-[600px] w-auto object-contain hover:scale-105 transition-transform duration-700 cursor-zoom-in" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCM5-460U48ALp1aKWOkMSH5iOH7WFVSoCn0B5df3NlpIe93wW8P2bc3Sb4g-1Ipry8Zz2RtIgAHADz7S9NuC5Okj5Ncny5r_g14D84pPxGb9bvAwdMQ852V5YiE_byehPk4yC8PFQc5Krhq_YzMZf9KNCycM807Y7h87d1cd6q5kEVs8ecOilopRnnTiy0occvsUsoamO_qaBgvpLcaHi2kyXiCJdfPp6jQyY9H0HvxZAlR0fJU5u7NPDPYm1KcjsUrZWnFUiCGz0"/>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="relative mt-8 md:mt-12 overflow-hidden px-10">
+                        <div class="absolute left-0 top-1/2 -translate-y-1/2 z-10 flex">
+                            <button id="lot-a-prev" class="w-8 h-8 rounded-full bg-white/80 backdrop-blur-sm border border-outline/10 flex items-center justify-center text-primary shadow-sm">
+                                <span class="material-symbols-outlined text-lg">chevron_left</span>
+                            </button>
+                        </div>
+                        <div id="lot-a-features" class="flex md:grid overflow-x-auto md:overflow-x-visible gap-4 snap-x md:snap-none snap-mandatory grid-cols-2 md:grid-cols-6 w-full no-scrollbar pb-2 md:pb-0">
+                            <div class="flex flex-col gap-2 p-4 md:p-6 bg-white rounded-2xl border border-outline/5 shadow-sm w-[calc(50%-8px)] md:w-auto snap-center flex-shrink-0 text-center">
+                                <span class="material-symbols-outlined text-primary text-xl">wb_sunny</span>
+                                <span class="font-body font-bold text-xs md:text-sm text-on-surface">南向きLDK</span>
+                            </div>
+                            <div class="flex flex-col gap-2 p-4 md:p-6 bg-white rounded-2xl border border-outline/5 shadow-sm w-[calc(50%-8px)] md:w-auto snap-center flex-shrink-0 text-center">
+                                <span class="material-symbols-outlined text-primary text-xl">inventory_2</span>
+                                <span class="font-body font-bold text-xs md:text-sm text-on-surface">ウォークインクローゼット設置</span>
+                            </div>
+                            <div class="flex flex-col gap-2 p-4 md:p-6 bg-white rounded-2xl border border-outline/5 shadow-sm w-[calc(50%-8px)] md:w-auto snap-center flex-shrink-0 text-center">
+                                <span class="material-symbols-outlined text-primary text-xl">cleaning_services</span>
+                                <span class="font-body font-bold text-xs md:text-sm text-on-surface">家事ラク動線</span>
+                            </div>
+                            <div class="flex flex-col gap-2 p-4 md:p-6 bg-white rounded-2xl border border-outline/5 shadow-sm w-[calc(50%-8px)] md:w-auto snap-center flex-shrink-0 text-center">
+                                <span class="material-symbols-outlined text-primary text-xl">shower</span>
+                                <span class="font-body font-bold text-xs md:text-sm text-on-surface">浴室乾燥機付き</span>
+                            </div>
+                            <div class="flex flex-col gap-2 p-4 md:p-6 bg-white rounded-2xl border border-outline/5 shadow-sm w-[calc(50%-8px)] md:w-auto snap-center flex-shrink-0 text-center">
+                                <span class="material-symbols-outlined text-primary text-xl">dishwasher</span>
+                                <span class="font-body font-bold text-xs md:text-sm text-on-surface">食器洗浄機付き</span>
+                            </div>
+                            <div class="flex flex-col gap-2 p-4 md:p-6 bg-white rounded-2xl border border-outline/5 shadow-sm w-[calc(50%-8px)] md:w-auto snap-center flex-shrink-0 text-center">
+                                <span class="material-symbols-outlined text-primary text-xl">verified</span>
+                                <span class="font-body font-bold text-xs md:text-sm text-on-surface">省エネ基準適合認定書あり</span>
+                            </div>
+                        </div>
+                        <div class="absolute right-0 top-1/2 -translate-y-1/2 z-10 flex">
+                            <button id="lot-a-next" class="w-8 h-8 rounded-full bg-white/80 backdrop-blur-sm border border-outline/10 flex items-center justify-center text-primary shadow-sm">
+                                <span class="material-symbols-outlined text-lg">chevron_right</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="scroll-mt-32 bg-white/40 p-6 md:p-12 rounded-3xl md:rounded-[3rem]" id="lot-b">
+                    <div class="flex flex-col lg:flex-row-reverse gap-10 lg:gap-20 items-stretch">
+                        <div class="lg:w-1/2 flex flex-col justify-center space-y-6 md:space-y-12">
+                            <div class="space-y-4 md:space-y-6">
+                                <span class="inline-block bg-primary text-on-primary font-headline text-[10px] md:text-[11px] px-4 py-1 md:px-6 md:py-1.5 rounded-full font-bold tracking-[0.2em] uppercase">For Sale</span>
+                                <h3 class="font-headline text-3xl md:text-5xl text-on-surface font-bold leading-tight">B区画：3,380<span class="text-xl md:text-2xl ml-1">万円</span></h3>
+                                <div class="space-y-1 md:space-y-2">
+                                    <p class="text-primary font-headline text-xl md:text-2xl font-bold">プライバシーを守りながら家族時間を愉しむ住まい。</p>
+                                    <p class="text-on-surface-variant font-body text-base md:text-lg">毎日の生活を軽やかにする、機能的な4LDK。</p>
+                                </div>
+                                <p class="text-on-surface-variant/60 font-body font-medium tracking-wide text-sm md:text-base">4LDK / 土地：129.05㎡ / 建物：98.94㎡</p>
+                            </div>
+                            <div class="relative rounded-2xl md:rounded-[3rem] overflow-hidden group shadow-2xl border-4 border-white">
+                                <img alt="B区画パース" class="w-full h-[240px] md:h-[400px] object-cover transition-transform duration-1000 group-hover:scale-105 cursor-zoom-in" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDdyqJ8rvhJJOVtfB8FRrKIu77f7xB8lE_4J1zpSMggTPGld_iY9QH7PyQyXbBlsdSrriIBqE4lHvx266Rrf1EfqtjTLmA0P0Zspp3nn8k9nvePBRgHni5hiLqMaBu2gs4NMypvHp4N3fkLddwzh7K1QrV06Rr1FPNp9WAwSpbcHnm-ji4Gty-SkwwZ5i7l3zLI1t1gdOUjJf4eO1f0zZFHgDNiThSTCb7vRuO8eGsBy5yjVN4xsVT6jCy8kxgZwftSAgP0rMNog2U"/>
+                            </div>
+                            <p class="text-[10px] md:text-[11px] text-on-surface-variant/60 ml-4 -mt-8 md:mt-10">※イメージパース</p>
+                        </div>
+                        <div class="lg:w-1/2 flex items-center justify-center">
+                            <div class="bg-white p-6 md:p-20 rounded-3xl md:rounded-[4rem] border border-outline/5 shadow-xl w-full flex justify-center items-center">
+                                <img alt="B区画間取り図" class="max-h-[400px] md:max-h-[600px] w-auto object-contain hover:scale-105 transition-transform duration-700 cursor-zoom-in" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAL1tz__pVxv4sEFdpq-3r49mQWnPa00p4yBLC1de0UNxZM0coCegL7Jvpbg4txXbmBKImG8srGbOAKyY9xqV9634wGc5dv8XuxYcigOXiUHY6UHHgTYpKa7Utma-cmcpp8M8w1NoLZcn3zEJFQD2Qa_2_DJjX6RuM5KhS2jD396hmexmEXOldmzhqUkrsSpn1Bnf0NV3OEADmYRFN1jkH9Hrte13zTkkFGs3qYs33CZHiA51Xq2jh0Fgvq90RmGDHwuoOU6y5gtbk"/>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="relative mt-8 md:mt-12 overflow-hidden px-10">
+                        <div class="absolute left-0 top-1/2 -translate-y-1/2 z-10 flex">
+                            <button id="lot-b-prev" class="w-8 h-8 rounded-full bg-white/80 backdrop-blur-sm border border-outline/10 flex items-center justify-center text-primary shadow-sm">
+                                <span class="material-symbols-outlined text-lg">chevron_left</span>
+                            </button>
+                        </div>
+                        <div id="lot-b-features" class="flex md:grid overflow-x-auto md:overflow-x-visible gap-4 snap-x md:snap-none snap-mandatory grid-cols-2 md:grid-cols-7 w-full no-scrollbar pb-2 md:pb-0">
+                            <div class="flex flex-col gap-2 p-4 md:p-6 bg-white rounded-2xl border border-outline/5 shadow-sm w-[calc(50%-8px)] md:w-auto snap-center flex-shrink-0 text-center">
+                                <span class="material-symbols-outlined text-primary text-xl">home</span>
+                                <span class="font-body font-bold text-xs md:text-sm text-on-surface">プライバシーを守る土地・設計</span>
+                            </div>
+                            <div class="flex flex-col gap-2 p-4 md:p-6 bg-white rounded-2xl border border-outline/5 shadow-sm w-[calc(50%-8px)] md:w-auto snap-center flex-shrink-0 text-center">
+                                <span class="material-symbols-outlined text-primary text-xl">weekend</span>
+                                <span class="font-body font-bold text-xs md:text-sm text-on-surface">家具配置がしやすいLDK</span>
+                            </div>
+                            <div class="flex flex-col gap-2 p-4 md:p-6 bg-white rounded-2xl border border-outline/5 shadow-sm w-[calc(50%-8px)] md:w-auto snap-center flex-shrink-0 text-center">
+                                <span class="material-symbols-outlined text-primary text-xl">yard</span>
+                                <span class="font-body font-bold text-xs md:text-sm text-on-surface">プライベートなガーデンスペース</span>
+                            </div>
+                            <div class="flex flex-col gap-2 p-4 md:p-6 bg-white rounded-2xl border border-outline/5 shadow-sm w-[calc(50%-8px)] md:w-auto snap-center flex-shrink-0 text-center">
+                                <span class="material-symbols-outlined text-primary text-xl">shower</span>
+                                <span class="font-body font-bold text-xs md:text-sm text-on-surface">浴室乾燥機付き</span>
+                            </div>
+                            <div class="flex flex-col gap-2 p-4 md:p-6 bg-white rounded-2xl border border-outline/5 shadow-sm w-[calc(50%-8px)] md:w-auto snap-center flex-shrink-0 text-center">
+                                <span class="material-symbols-outlined text-primary text-xl">dishwasher</span>
+                                <span class="font-body font-bold text-xs md:text-sm text-on-surface">食器洗浄機付き</span>
+                            </div>
+                            <div class="flex flex-col gap-2 p-4 md:p-6 bg-white rounded-2xl border border-outline/5 shadow-sm w-[calc(50%-8px)] md:w-auto snap-center flex-shrink-0 text-center">
+                                <span class="material-symbols-outlined text-primary text-xl">verified</span>
+                                <span class="font-body font-bold text-xs md:text-sm text-on-surface">省エネ基準適合認定書あり</span>
+                            </div>
+                            <div class="flex flex-col gap-2 p-4 md:p-6 bg-white rounded-2xl border border-outline/5 shadow-sm w-[calc(50%-8px)] md:w-auto snap-center flex-shrink-0 text-center">
+                                <span class="material-symbols-outlined text-primary text-xl">crop_free</span>
+                                <span class="font-body font-bold text-xs md:text-sm text-on-surface">広々LDK</span>
+                            </div>
+                        </div>
+                        <div class="absolute right-0 top-1/2 -translate-y-1/2 z-10 flex">
+                            <button id="lot-b-next" class="w-8 h-8 rounded-full bg-white/80 backdrop-blur-sm border border-outline/10 flex items-center justify-center text-primary shadow-sm">
+                                <span class="material-symbols-outlined text-lg">chevron_right</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="relative overflow-hidden pb-12 pt-20" id="location">
+        <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-stretch">
+                <div class="flex flex-col justify-center">
+                    <div class="relative mb-6 md:mb-8">
+                        <span class="absolute left-0 top-1/2 -translate-y-1/2 text-[14vw] md:text-[9vw] font-black tracking-widest uppercase pointer-events-none select-none z-0 font-headline leading-none" style="color: rgba(69, 85, 65, 0.12);">LOCATION</span>
+                        <div class="relative z-10">
+                            <span class="font-headline text-[11px] md:text-[13px] text-primary uppercase tracking-[0.5em] mb-4 block font-bold">Neighborhood</span>
+                            <h2 class="font-headline text-headline-md md:text-headline-lg mb-6">利便と安らぎが、<br/>響き合う日常。</h2>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="font-body text-sm md:text-base text-on-surface-variant mb-8 md:mb-12 leading-relaxed md:leading-loose">
+                            徒歩圏内にスーパー、コンビニ、ドラッグストアが充実。教育施設も身近に揃う、子育て世代に嬉しい環境です。平日は市内中心部へスムーズにアクセス、週末は「ジ アウトレット広島」で家族の時間を楽しむ。ONもOFFも充実するロケーションです。
+                        </p>
+                        <div class="space-y-2 bg-white p-6 md:p-8 rounded-2xl md:rounded-[2rem] border border-outline/5 shadow-sm">
+                            <ul class="font-body text-on-surface-variant text-sm space-y-2.5 md:space-y-2">
+                                <li class="flex justify-between border-b border-outline/5 pb-2 md:border-none md:pb-0"><span>フレスタ己斐上店</span><span class="text-on-surface-variant text-xs md:text-sm">徒歩12分</span></li>
+                                <li class="flex justify-between border-b border-outline/5 pb-2 md:border-none md:pb-0"><span>セブンイレブン広島己斐上3丁目店</span><span class="text-on-surface-variant text-xs md:text-sm">徒歩4分</span></li>
+                                <li class="flex justify-between border-b border-outline/5 pb-2 md:border-none md:pb-0"><span>ウォンツ己斐上店</span><span class="text-on-surface-variant text-xs md:text-sm">徒歩5分</span></li>
+                                <li class="flex justify-between border-b border-outline/5 pb-2 md:border-none md:pb-0"><span>広島市立己斐中学校</span><span class="text-on-surface-variant text-xs md:text-sm">徒歩13分</span></li>
+                                <li class="flex justify-between border-b border-outline/5 pb-2 md:border-none md:pb-0"><span>広島市立己斐東小学校</span><span class="text-on-surface-variant text-xs md:text-sm">徒歩13分</span></li>
+                                <li class="flex justify-between border-b border-outline/5 pb-2 md:border-none md:pb-0"><span>さくら保育所</span><span class="text-on-surface-variant text-xs md:text-sm">徒歩15分</span></li>
+                                <li class="flex justify-between border-b border-outline/5 pb-2 md:border-none md:pb-0"><span>医療法人社団共愛会己斐ケ丘病院</span><span class="text-on-surface-variant text-xs md:text-sm">徒歩35分</span></li>
+                                <li class="flex justify-between border-b border-outline/5 pb-2 md:border-none md:pb-0"><span>広島己斐上郵便局</span><span class="text-on-surface-variant text-xs md:text-sm">徒歩8分</span></li>
+                                <li class="flex justify-between"><span>広島銀行己斐支店</span><span class="text-on-surface-variant text-xs md:text-sm">徒歩25分</span></li>
+                            </ul>
+                        </div>
+                        <p class="mt-4 font-body text-[10px] md:text-[11px] text-on-surface-variant/60 leading-relaxed">※各施設への徒歩分数は現地からの距離から80m/1分で計算し、端数は切り上げています。</p>
+                    </div>
+                </div>
+                <div class="rounded-2xl md:rounded-[2rem] overflow-hidden border border-outline/10 shadow-lg h-[300px] lg:h-auto min-h-[350px] relative z-10">
+                    <iframe allowfullscreen="" class="w-full h-full min-h-[350px]" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d822.9183574706027!2d132.41944157354652!3d34.40964561445059!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzTCsDI0JzM1LjAiTiAxMzLCsDI1JzA4LjAiRQ!5e0!3m2!1sja!2sjp!4v1782494616775!5m2!1sja!2sjp" style="border:0;"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 md:py-32 bg-white" id="overview">
+        <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+            <div class="text-center mb-12 md:mb-24 relative">
+                <span class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-[14vw] md:text-[9vw] font-black tracking-widest uppercase pointer-events-none select-none z-0 font-headline leading-none" style="color: rgba(69, 85, 65, 0.12);">OVERVIEW</span>
+                <div class="relative z-10">
+                    <span class="font-headline text-[11px] md:text-[13px] text-primary uppercase tracking-[0.5em] mb-4 block font-bold">Specification</span>
+                    <h2 class="font-headline text-2xl md:text-4xl font-bold text-on-surface">物件概要</h2>
+                </div>
+            </div>
+            <div class="overflow-hidden rounded-2xl md:rounded-[3rem] border border-outline/10 bg-white shadow-sm max-w-5xl mx-auto">
+                <table class="w-full text-left border-collapse block md:table">
+                    <tbody class="font-body text-on-surface-variant block md:table-row-group">
+                        <tr class="border-b border-outline/5 flex flex-col md:table-row">
+                            <th class="w-full md:w-1/3 p-4 md:p-6 bg-surface-container-low font-headline text-sm font-bold text-on-surface uppercase tracking-wider block md:table-cell">所在地</th>
+                            <td class="p-4 md:p-6 text-sm md:text-base block md:table-cell">広島県広島市西区己斐上四丁目</td>
+                        </tr>
+                        <tr class="border-b border-outline/5 flex flex-col md:table-row">
+                            <th class="w-full md:w-1/3 p-4 md:p-6 bg-surface-container-low font-headline text-sm font-bold text-on-surface uppercase tracking-wider block md:table-cell">交通</th>
+                            <td class="p-4 md:p-6 text-sm md:text-base block md:table-cell">ＪＲ山陽本線西広島駅 徒歩25分 / バス(己斐峠入口 乗15分 停歩1分)</td>
+                        </tr>
+                        <tr class="border-b border-outline/5 flex flex-col md:table-row">
+                            <th class="w-full md:w-1/3 p-4 md:p-6 bg-surface-container-low font-headline text-sm font-bold text-on-surface uppercase tracking-wider block md:table-cell">総戸数/販売戸数</th>
+                            <td class="p-4 md:p-6 text-sm md:text-base block md:table-cell">2戸/2戸</td>
+                        </tr>
+                        <tr class="border-b border-outline/5 flex flex-col md:table-row">
+                            <th class="w-full md:w-1/3 p-4 md:p-6 bg-surface-container-low font-headline text-sm font-bold text-on-surface uppercase tracking-wider block md:table-cell">価格</th>
+                            <td class="p-4 md:p-6 text-sm md:text-base block md:table-cell">A区画：3,580万円 / B区画：3,380万円</td>
+                        </tr>
+                        <tr class="border-b border-outline/5 flex flex-col md:table-row">
+                            <th class="w-full md:w-1/3 p-4 md:p-6 bg-surface-container-low font-headline text-sm font-bold text-on-surface uppercase tracking-wider block md:table-cell">土地面積</th>
+                            <td class="p-4 md:p-6 text-sm md:text-base block md:table-cell">A区画：129.05㎡ / B区画：129.05㎡</td>
+                        </tr>
+                        <tr class="border-b border-outline/5 flex flex-col md:table-row">
+                            <th class="w-full md:w-1/3 p-4 md:p-6 bg-surface-container-low font-headline text-sm font-bold text-on-surface uppercase tracking-wider block md:table-cell">延床面積</th>
+                            <td class="p-4 md:p-6 text-sm md:text-base block md:table-cell">A区画：101.43㎡ / B区画：98.94㎡</td>
+                        </tr>
+                        <tr class="border-b border-outline/5 flex flex-col md:table-row">
+                            <th class="w-full md:w-1/3 p-4 md:p-6 bg-surface-container-low font-headline text-sm font-bold text-on-surface uppercase tracking-wider block md:table-cell">接道情報</th>
+                            <td class="p-4 md:p-6 text-sm md:text-base block md:table-cell">A区画：東側 幅員4.1m 接道間口6.9m / B区画：東側 幅員4.1m 接道間口2.8m</td>
+                        </tr>
+                        <tr class="border-b border-outline/5 flex flex-col md:table-row">
+                            <th class="w-full md:w-1/3 p-4 md:p-6 bg-surface-container-low font-headline text-sm font-bold text-on-surface uppercase tracking-wider block md:table-cell">構造・工法</th>
+                            <td class="p-4 md:p-6 text-sm md:text-base block md:table-cell">木造2階建（軸組工法）</td>
+                        </tr>
+                        <tr class="border-b border-outline/5 flex flex-col md:table-row">
+                            <th class="w-full md:w-1/3 p-4 md:p-6 bg-surface-container-low font-headline text-sm font-bold text-on-surface uppercase tracking-wider block md:table-cell">用途地域</th>
+                            <td class="p-4 md:p-6 text-sm md:text-base block md:table-cell">第一種低層住居専用地域</td>
+                        </tr>
+                        <tr class="border-b border-outline/5 flex flex-col md:table-row">
+                            <th class="w-full md:w-1/3 p-4 md:p-6 bg-surface-container-low font-headline text-sm font-bold text-on-surface uppercase tracking-wider block md:table-cell">都市計画</th>
+                            <td class="p-4 md:p-6 text-sm md:text-base block md:table-cell">市街化区域</td>
+                        </tr>
+                        <tr class="border-b border-outline/5 flex flex-col md:table-row">
+                            <th class="w-full md:w-1/3 p-4 md:p-6 bg-surface-container-low font-headline text-sm font-bold text-on-surface uppercase tracking-wider block md:table-cell">建ぺい率 / 容積率</th>
+                            <td class="p-4 md:p-6 text-sm md:text-base block md:table-cell">50% / 100%</td>
+                        </tr>
+                        <tr class="border-b border-outline/5 flex flex-col md:table-row">
+                            <th class="w-full md:w-1/3 p-4 md:p-6 bg-surface-container-low font-headline text-sm font-bold text-on-surface uppercase tracking-wider block md:table-cell">地目</th>
+                            <td class="p-4 md:p-6 text-sm md:text-base block md:table-cell">宅地</td>
+                        </tr>
+                        <tr class="border-b border-outline/5 flex flex-col md:table-row">
+                            <th class="w-full md:w-1/3 p-4 md:p-6 bg-surface-container-low font-headline text-sm font-bold text-on-surface uppercase tracking-wider block md:table-cell">取引態様</th>
+                            <td class="p-4 md:p-6 text-sm md:text-base block md:table-cell">専任媒介</td>
+                        </tr>
+                        <tr class="border-b border-outline/5 flex flex-col md:table-row">
+                            <th class="w-full md:w-1/3 p-4 md:p-6 bg-surface-container-low font-headline text-sm font-bold text-on-surface uppercase tracking-wider block md:table-cell">完成予定</th>
+                            <td class="p-4 md:p-6 text-sm md:text-base block md:table-cell">2026年9月予定</td>
+                        </tr>
+                        <tr class="border-b border-outline/5 flex flex-col md:table-row">
+                            <th class="w-full md:w-1/3 p-4 md:p-6 bg-surface-container-low font-headline text-sm font-bold text-on-surface uppercase tracking-wider block md:table-cell">設備・条件</th>
+                            <td class="p-4 md:p-6 text-sm md:text-base block md:table-cell">システムキッチン, 食器洗い乾燥機, 浴室乾燥機, TVドアホン, 都市ガス, 駐車場有 他</td>
+                        </tr>
+                        <tr class="flex flex-col md:table-row">
+                            <th class="w-full md:w-1/3 p-4 md:p-6 bg-surface-container-low font-headline text-sm font-bold text-on-surface uppercase tracking-wider block md:table-cell">建築確認番号</th>
+                            <td class="p-4 md:p-6 text-sm md:text-base block md:table-cell">A区画：第07確認建築広島市建00226号<br class="md:hidden"> / B区画：第07確認建築広島市建00225号</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+</main>
+
+<section class="py-16 md:py-24 bg-surface-container-low border-t border-outline/5">
+    <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+        <div class="bg-white rounded-3xl md:rounded-[3rem] p-6 md:p-20 border border-outline/10 shadow-xl flex flex-col lg:flex-row justify-between items-start gap-12">
+            <div class="max-w-xl">
+                <span class="font-headline text-primary uppercase tracking-[0.4em] font-bold text-xs mb-4 md:mb-6 block">Advertiser Information</span>
+                <h4 class="font-headline text-2xl md:text-4xl font-bold text-on-surface mb-6 md:mb-8">株式会社ライフプラス</h4>
+                <div class="space-y-4 md:space-y-6 font-body text-on-surface-variant">
+                    <div class="flex items-start gap-4">
+                        <span class="material-symbols-outlined text-primary">location_on</span>
+                        <p class="text-sm md:text-lg">〒730-0013 広島市中区八丁堀15-10 セントラルビル4F</p>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8">
+                        <div class="flex items-center gap-4">
+                            <span class="material-symbols-outlined text-primary">call</span>
+                            <span class="text-xl md:text-2xl font-bold text-on-surface">082-225-7799</span>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <span class="material-symbols-outlined text-primary">fax</span>
+                            <span class="text-sm md:text-lg">082-225-6482</span>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8">
+                        <div class="flex items-center gap-4">
+                            <span class="material-symbols-outlined text-primary">schedule</span>
+                            <span class="text-sm md:text-lg">AM9:00～PM6:00</span>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <span class="material-symbols-outlined text-primary">calendar_today</span>
+                            <span class="text-sm md:text-lg">定休日：日・祝・水曜日</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="lg:text-right flex flex-col gap-4 w-full lg:w-auto">
+                <div class="inline-block px-6 py-3 bg-primary/5 rounded-full border border-primary/10 text-center lg:text-left">
+                    <p class="text-xs md:text-sm font-bold text-primary">宅建免許番号：広島県知事(3)第10105号</p>
+                </div>
+                <div class="pt-6 md:pt-8 border-t border-outline/10 flex flex-col gap-2 font-body text-xs md:text-sm text-on-surface-variant/60">
+                    <p>情報公開日: <span id="section-current-date">2026年6月27日</span></p>
+                    <p>次回更新予定日: <span id="section-next-update-date">-</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="bg-surface-container-low pt-16 md:pt-32 pb-32 md:pb-20 relative overflow-hidden">
+    <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop flex flex-col md:flex-row justify-between items-start gap-12 md:gap-24 relative z-10">
+        <div class="max-w-lg">
+            <div class="mb-6">
+                <img src="LIFE PLUS_logo.png" alt="株式会社ライフプラス" class="h-[29px] md:h-[36px] w-auto object-contain">
+            </div>
+            <p class="font-body text-sm md:text-body-lg text-on-surface-variant mb-8 leading-relaxed md:leading-loose">
+                私たちは、この街の風景に溶け込みながらも、住まう人の個性が輝く家づくりを目指しています。家族が笑顔で過ごせる温かな「広場」のような場所を。
+            </p>
+        </div>
+        <div class="grid grid-cols-2 gap-x-12 md:gap-x-24 gap-y-12">
+            <div class="flex flex-col gap-4 md:gap-8">
+                <span class="font-headline text-primary uppercase tracking-[0.4em] font-bold text-xs">Quick Links</span>
+                <nav class="flex flex-col gap-4 md:gap-6">
+                    <a class="font-body font-bold text-on-surface-variant hover:text-primary transition-colors text-xs md:text-[14px] uppercase tracking-wider" href="#features">Features</a>
+                    <a class="font-body font-bold text-on-surface-variant hover:text-primary transition-colors text-xs md:text-[14px] uppercase tracking-wider" href="#floorplans">Plans</a>
+                    <a class="font-body font-bold text-on-surface-variant hover:text-primary transition-colors text-xs md:text-[14px] uppercase tracking-wider" href="#location">Location</a>
+                </nav>
+            </div>
+            <div class="flex flex-col gap-4 md:gap-8">
+                <span class="font-headline text-primary uppercase tracking-[0.4em] font-bold text-xs">Information</span>
+                <nav class="flex flex-col gap-4 md:gap-6">
+                    <a class="font-body font-bold text-on-surface-variant hover:text-primary transition-colors text-xs md:text-[14px]" href="#">Privacy Policy</a>
+                    <a class="font-body font-bold text-on-surface-variant hover:text-primary transition-colors text-xs md:text-[14px]" href="#">Terms of Use</a>
+                    <a class="font-body font-bold text-on-surface-variant hover:text-primary transition-colors text-xs md:text-[14px]" href="#">Sitemap</a>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop pt-12 border-t border-outline/10 text-center mt-16 md:mt-32">
+        <p class="font-headline text-on-surface-variant/40 font-bold tracking-[0.3em] text-[9px] md:text-[10px] uppercase">© 2024 Corporate Logo. All rights reserved.</p>
+    </div>
+</footer>
+
+<div class="fixed bottom-0 left-0 w-full z-50 flex md:hidden items-stretch h-20 shadow-2xl bg-white border-t border-outline/5">
+    <a class="flex-1 flex flex-col items-center justify-center gap-1 bg-surface-container-low text-primary active:bg-primary/5 transition-all" href="tel:082-225-7799">
+        <span class="material-symbols-outlined text-2xl">call</span>
+        <span class="font-headline text-[10px] font-bold tracking-widest uppercase">電話問い合わせ</span>
+    </a>
+    <a class="flex-1 flex flex-col items-center justify-center gap-1 bg-primary text-on-primary active:brightness-90 transition-all" href="https://forms.gle/8WCTNf1ANk5xB3nR9">
+        <span class="material-symbols-outlined text-2xl">mail</span>
+        <span class="font-headline text-[10px] font-bold tracking-widest uppercase">資料請求フォーム</span>
+    </a>
+</div>
+
+<div class="fixed inset-0 z-[200] flex items-center justify-center bg-black/40 backdrop-blur-md p-6 hidden" id="call-modal">
+    <div class="bg-white rounded-[2rem] md:rounded-[3rem] w-full max-w-md p-8 md:p-14 shadow-2xl relative">
+        <button class="absolute top-6 right-6 md:top-10 md:right-10 text-on-surface-variant hover:text-on-surface transition-colors" onclick="document.getElementById('call-modal').classList.add('hidden')">
+            <span class="material-symbols-outlined text-2xl md:text-3xl">close</span>
+        </button>
+        <div class="text-center mb-8 md:mb-12">
+            <div class="w-16 h-16 md:w-24 md:h-24 bg-primary/5 rounded-full flex items-center justify-center mx-auto mb-6 md:mb-10 text-primary">
+                <span class="material-symbols-outlined text-3xl md:text-5xl">call</span>
+            </div>
+            <h3 class="font-headline text-2xl md:text-3xl font-bold mb-4 md:mb-6">お電話でのお問い合わせ</h3>
+            <p class="font-body text-sm md:text-base text-on-surface-variant leading-relaxed md:leading-loose font-medium">物件に関するご相談・見学予約など<br/>お気軽にお電話ください。</p>
+        </div>
+        <a class="block w-full py-5 md:py-8 bg-primary text-on-primary rounded-xl md:rounded-[2rem] text-center font-headline text-2xl md:text-4xl font-bold hover:shadow-2xl hover:shadow-primary/30 transition-all shadow-xl" href="tel:082-225-7799">
+            082-225-7799
+        </a>
+        <div class="mt-6 md:mt-10 text-center">
+            <p class="font-headline text-on-surface-variant/60 font-bold tracking-[0.2em] uppercase text-[10px] md:text-[11px]">Reception: 10:00 — 18:00 (Closed on Wed)</p>
+        </div>
+    </div>
+</div>
+
+<div class="hidden fixed inset-0 z-[300] flex items-center justify-center bg-black/90 backdrop-blur-xl p-4 md:p-10 cursor-zoom-out" id="image-modal" onclick="this.classList.add('hidden')">
+    <button class="absolute top-6 right-6 md:top-10 md:right-10 text-white hover:scale-110 transition-transform z-[310]">
+        <span class="material-symbols-outlined text-3xl md:text-4xl">close</span>
+    </button>
+    <img class="max-w-full max-h-full object-contain rounded-lg shadow-2xl" id="modal-img" onclick="event.stopPropagation()" src=""/>
+</div>
+
+<script>
+    // Hamburger Menu Drawer Logic
+    const menuBtn = document.getElementById('menu-btn');
+    const closeMenuBtn = document.getElementById('close-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+
+    if (menuBtn && mobileMenu) {
+        menuBtn.addEventListener('click', () => mobileMenu.classList.remove('translate-x-full'));
+    }
+    if (closeMenuBtn && mobileMenu) {
+        closeMenuBtn.addEventListener('click', () => mobileMenu.classList.add('translate-x-full'));
+    }
+    mobileNavLinks.forEach(link => {
+        link.addEventListener('click', () => mobileMenu.classList.add('translate-x-full'));
+    });
+
+    // Close modal on outside click
+    document.getElementById('call-modal').addEventListener('click', (e) => {
+        if (e.target === document.getElementById('call-modal')) {
+            document.getElementById('call-modal').classList.add('hidden');
+        }
+    });
+
+    // Smooth Scroll
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href');
+            if (targetId === '#') return;
+            const target = document.querySelector(targetId);
+            if (target) {
+                const headerOffset = 100;
+                const elementPosition = target.getBoundingClientRect().top;
+                const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+                window.scrollTo({
+                    top: offsetPosition,
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+
+    // Image Modal Setup
+    document.querySelectorAll('#lot-a img, #lot-b img').forEach(img => { 
+        if(!img.alt.includes('deco')) { 
+            img.classList.add('cursor-zoom-in'); 
+            img.addEventListener('click', () => { 
+                const modal = document.getElementById('image-modal'); 
+                const modalImg = document.getElementById('modal-img'); 
+                modalImg.src = img.src; 
+                modal.classList.remove('hidden'); 
+            }); 
+        } 
+    });
+
+    // Auto Slider Engine
+    function initAutoSlider(containerId, nextBtnId, prevBtnId, interval = 4000) {
+        const container = document.getElementById(containerId);
+        if (!container) return;
+
+        let autoScrollTimer;
+
+        const getStepWidth = () => {
+            const firstItem = container.querySelector('.flex-shrink-0, th, td, div');
+            if (!firstItem) return container.clientWidth;
+            const gap = parseFloat(window.getComputedStyle(container).gap) || 0;
+            return firstItem.offsetWidth + gap;
+        };
+
+        const startTimer = () => {
+            autoScrollTimer = setInterval(() => {
+                if (container.scrollWidth <= container.clientWidth) return;
+
+                if (container.scrollLeft >= (container.scrollWidth - container.clientWidth - 10)) {
+                    container.scrollTo({ left: 0, behavior: 'smooth' });
+                } else {
+                    container.scrollBy({ left: getStepWidth(), behavior: 'smooth' });
+                }
+            }, interval);
+        };
+
+        const stopTimer = () => clearInterval(autoScrollTimer);
+
+        startTimer();
+
+        container.addEventListener('touchstart', stopTimer);
+        container.addEventListener('touchend', startTimer);
+
+        if (nextBtnId) {
+            document.getElementById(nextBtnId)?.addEventListener('click', () => {
+                stopTimer();
+                if (container.scrollLeft >= (container.scrollWidth - container.clientWidth - 10)) {
+                    container.scrollTo({ left: 0, behavior: 'smooth' });
+                } else {
+                    container.scrollBy({ left: getStepWidth(), behavior: 'smooth' });
+                }
+                startTimer();
+            });
+        }
+
+        if (prevBtnId) {
+            document.getElementById(prevBtnId)?.addEventListener('click', () => {
+                stopTimer();
+                if (container.scrollLeft <= 10) {
+                    container.scrollTo({ left: container.scrollWidth, behavior: 'smooth' });
+                } else {
+                    container.scrollBy({ left: -getStepWidth(), behavior: 'smooth' });
+                }
+                startTimer();
+            });
+        }
+    }
+
+    // Initialize Sliders
+    window.addEventListener('DOMContentLoaded', () => {
+        initAutoSlider('features-slider', 'features-next', 'features-prev', 4500);
+        initAutoSlider('lot-a-features', 'lot-a-next', 'lot-a-prev', 4000);
+        initAutoSlider('lot-b-features', 'lot-b-next', 'lot-b-prev', 4200);
+    });
+
+    // Auto Date Update
+    (function(){
+        const now = new Date();
+        const formatDate = (d) => `${d.getFullYear()}年${d.getMonth()+1}月${d.getDate()}日`;
+        document.getElementById('section-current-date').textContent = formatDate(now);
+        
+        const expirationDate = new Date();
+        expirationDate.setDate(now.getDate() + 13);
+        document.getElementById('section-expiration-date').textContent = formatDate(expirationDate);
+
+        const nextUpdate = new Date();
+        nextUpdate.setDate(now.getDate() + 14);
+        document.getElementById('section-next-update-date').textContent = formatDate(nextUpdate);
+    })();
+</script>
+</body>
+</html>
